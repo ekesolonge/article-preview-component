@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <style>
+    @font-face {
+      font-family: Manrope;
+      src: url(./Manrope/Manrope-VariableFont_wght.ttf);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Manrope';
+      font-size: 13px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: hsl(210, 46%, 95%);
+      line-height: 1.5;
+    }
+
+    h2,
+    h4 {
+      color:hsl(214, 17%, 51%);
+      padding: 0.5rem;
+    }
+
+    p {
+      color: hsl(214, 17%, 51%);
+      padding: 0.5rem;
+      font-weight: 300;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 0.5rem;
+      width: 700px;
+    }
+
+    .container .img {
+      width: 100%;
+      background: url(./images/drawers.jpg) no-repeat center center/cover;
+    }
+
+    .container .content {
+      padding: 2rem;
+    }
+
+    .container .content .user {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .profile{
+      display: flex;
+      align-items: center;
+    }
+
+    .profile .name {
+      float: right;
+      vertical-align: bottom;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 50px;
+      margin-right: 1rem;
+    }
+    .name h4,.name p{
+      padding: 0;
+    }
+    .share{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: hsl(210, 46%, 95%);
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="img"></div>
+    <div class="content">
+      <div class="content-des">
+        <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p>Ever been in a room and felt like something was missing?
+          Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel
+          complete.
+        </p>
+      </div>
+      <div class="user">
+        <div class="profile">
+          <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+          <div class="name">
+            <h4>Michelle Appleton</h4>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share">
+          <img src="./images/icon-share.svg" alt="icon-share">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
